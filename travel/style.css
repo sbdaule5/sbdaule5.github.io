@@ -26,17 +26,18 @@ body{
     background: #0004;
     align-items: center;
     padding: 5px;
+    justify-content: space-between;
 }
 .nav-a{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 30vw;
-    margin-left: 60vw;
 }
 .nav-a a{
     color:black;
     padding: 5px;
+    margin-left: max(1vw, 10px);
+    margin-right: max(1vw, 10px);
     border-radius: 4px;
     text-decoration: none;
 }
@@ -78,7 +79,7 @@ body{
     color: white;
     top:5vw;
     left:5vw;
-    width: 25vw;
+    width: 40vw;
 }
 
 
@@ -193,7 +194,35 @@ footer{
 }
 .socials{
     display: flex;
-    padding: 1px;
+    padding: 10px;
     width: 8vw;
     justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 480px)
+{
+/* .nav-a-txt{
+    display: none;
+} */
+.nav-a i {
+    display: none;
+}
+.nav-a a{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.desc{
+    width: 90vw;
+    left: 1vw;
+}
+.highlights-content{
+    flex-direction: column;
+}
+.card1{
+    width: 87.75vw;
+    height: 87.75vw;
+    margin-right: 2.5vw;
+}
+
 }
